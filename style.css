@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    padding: 40px;
+}
+
+.img-fond{
+    background: url(./fond.jpeg) no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    opacity: 0.1;
+}
+
+.code{
+    width: 300px;
+    position: relative;
+    z-index: 2;
+}
+
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+p{
+    position: relative;
+    z-index: 2;
+    padding: 10px;
+    border: 1px solid gray;
+    width: 200px; /* à modifier selon vos besoins */
+    font-family: sans-serif;
+    margin-left: 20px;
+}
+
+.p1 {
+    overflow: hidden; /* les dépassements seront masqués */
+}
+
+.p2{
+    word-wrap: break-word;
+}
+
+.p3{
+    overflow: hidden;
+    text-overflow: ellipsis; 
+}
+
+.p4{
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+    word-wrap: break-word;
+}
+
+.p5{
+    max-width: 200px;
+}
+
+.chat{
+    width: 375px;
+}
+
+.img{
+    max-width: 100%;
+}
