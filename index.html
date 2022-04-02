@@ -5,105 +5,313 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <link href='./style.css' rel='stylesheet'>
+    <script src='index.js' type='module' defer></script>
+     <script src="./prism.js"></script>
      <link rel="stylesheet" href="./prism.css" />
      <script src="./prism.js"></script>
     <title>Document</title>
 </head>
-<body class="opacity">
-    <img class="img-fond" src="./fond.jpeg">
-    <div class="box">
-        <pre class="code">
-            <code class="language-css">   
-.p{
-    width: 200px; 
-}
-            </code>
-        </pre>
-        <p>
-            J'ai une mauvaise nouvelle pour vous : le Web n'est pas un média figé ou paginé tel que le média d'impression. Vous n'êtes pas maître de votre contenu et il va falloir vous y faire.
-            Puisque - heureusement - il n'est plus possible de fixer la taille, voici un point sur les différentes techniques modernes permettant de canaliser les caprices de vos contributeurs…
-            blablablablablablablablablablablablabla
-        </p>
-    </div>
-    <div class="box">
-        <pre class="code">
-            <code class="language-css">   
-.p{
-    width: 200px; 
-    overflow: hidden;
-}
-            </code>
-        </pre>
-        <p class="p1">
-            J'ai une mauvaise nouvelle pour vous : le Web n'est pas un média figé ou paginé tel que le média d'impression. Vous n'êtes pas maître de votre contenu et il va falloir vous y faire.
-            Puisque - heureusement - il n'est plus possible de fixer la taille, voici un point sur les différentes techniques modernes permettant de canaliser les caprices de vos contributeurs…
-            blablablablablablablablablablablablabla
-        </p>
-    </div>
-    <div class="box">
-        <pre class="code">
-            <code class="language-css">   
-.p{
-    width: 200px;
-    word-wrap: break-word;
-}
-            </code>
-        </pre>
-        <p class="p2">
-            J'ai une mauvaise nouvelle pour vous : le Web n'est pas un média figé ou paginé tel que le média d'impression. Vous n'êtes pas maître de votre contenu et il va falloir vous y faire.
-            Puisque - heureusement - il n'est plus possible de fixer la taille, voici un point sur les différentes techniques modernes permettant de canaliser les caprices de vos contributeurs…
-            blablablablablablablablablablablablabla
-        </p>
-    </div>
-    <div class="box">
-        <pre class="code">
-            <code class="language-css">   
-.p{
-    width: 200px;
-    overflow: hidden;
-    text-overflow: ellipsis; 
-}
-            </code>
-        </pre>
-        <p class="p3">
-            J'ai une mauvaise nouvelle pour vous : le Web n'est pas un média figé ou paginé tel que le média d'impression. Vous n'êtes pas maître de votre contenu et il va falloir vous y faire.
-            Puisque - heureusement - il n'est plus possible de fixer la taille, voici un point sur les différentes techniques modernes permettant de canaliser les caprices de vos contributeurs…
-            blablablablablablablablablablablablabla
-        </p>
-    </div>
-    <div class="box">
-        <pre class="code">
-            <code class="language-css">   
-.p{
-    max-width: 200px;
-}
-            </code>
-        </pre>
-    <p>
-        J'ai une mauvaise nouvelle pour vous : le Web n'est pas un média figé ou paginé tel que le média d'impression. Vous n'êtes pas maître de votre contenu et il va falloir vous y faire.
-        Puisque - heureusement - il n'est plus possible de fixer la taille, voici un point sur les différentes techniques modernes permettant de canaliser les caprices de vos contributeurs…
-        <img class="chat" src="./chat.jpeg">
-        blablablablablablablablablablablablabla
-    </p>
-    </div>
-    <div class="box">
-        <pre class="code">
-            <code class="language-css">   
-.p{
-    max-width: 200px;
-}
-
-.img{
-    max-width: 100%;
-}
-            </code>
-        </pre>
-        <p class="p5">
-            J'ai une mauvaise nouvelle pour vous : le Web n'est pas un média figé ou paginé tel que le média d'impression. Vous n'êtes pas maître de votre contenu et il va falloir vous y faire.
-            Puisque - heureusement - il n'est plus possible de fixer la taille, voici un point sur les différentes techniques modernes permettant de canaliser les caprices de vos contributeurs…
-            <img class="chat img" src="./chat.jpeg">
-            blablablablablablablablablablablablabla
-        </p>
+<body>
+    <h1>[°_°]</h1>
+    <h1>Fonctions pour les tableaux en javascrpit</h1>
+    <nav>
+        <ul>
+            <li>
+                <a id="M5">Ajouter</a>
+            </li>
+            <li>
+                <a id="M0">Convertir</a>
+            </li>
+            <li>
+                <a id="M1">Filtrer</a>
+            </li>
+            <li>
+                <a id="M2">Supprimer</a>
+            </li>
+            <li>
+                <a id="M3">Trier</a>
+            </li>
+            <li>
+                <a id="M4">Calculer</a>
+            </li>
+        </ul>
+    </nav>
+    <nav>
+        <ul>
+            <li>
+                <a id="btn-article-0" class="SM0">Convertir en chaine de caractère</a>
+            </li>
+            <li>
+                <a id="btn-article-1">Connaitre la taille</a>
+            </li>
+            <li>
+                <a id="btn-article-2" class="SM2">Supprime le dernier élément d'un tableau</a>
+            </li>
+            <li>
+                <a id="btn-article-3" class="SM2">Supprime le premier élément d'un tableau</a>
+            </li>
+            <li>
+                <a id="btn-article-4" class="SM2">Supprimer les premiers éléments d'un tableau</a>
+            </li>
+            <li>
+                <a id="btn-article-5" class="SM2">Supprimer les derniers éléments d'un tableau</a>
+            </li>
+            <li>
+                <a id="btn-article-6" class="SM4">Calcul la somme de toutes les valeurs d'un tableau</a>
+            </li>
+            <li>
+                <a id="btn-article-7" class="SM3">Trie un tableau par odre croissant</a>
+            </li>
+            <li>
+                <a id="btn-article-8" class="SM3">Trie un tableau par odre décroissant</a>
+            </li>
+            <li>
+                <a id="btn-article-9" class="SM1">Trouver la valeur la plus grande d'un tableau</a>
+            </li>
+            <li>
+                <a id="btn-article-10" class="SM1">Trouver la valeur la plus petite d'un tableau</a>
+            </li>
+            <li>
+                <a id="btn-article-11" class="SM5">Ajouter des éléments à un tableau et suppression possible d'éléments</a>
+            </li>
+            <li>
+                <a id="btn-article-12" class="SM4">Calculer l'ensemeble des valeurs d'un tableau</a>
+            </li>
+            <li>
+                <a id="btn-article-13" class="SM1">Filtrer un tableau</a>
+            </li>
+            <li>
+                <a id="btn-article-14" class="SM1">Trouver un élément dans un tableau</a>
+            </li>
+            <li>
+                <a id="btn-article-15" class="SM1">Trouver l'index d'un élément dans un tableau</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="box-article">
+        <article id="article-0" class="none">
+            <div class="result-array">
+                ["10", "1", "2", "3", "4", "5"]
+            </div>
+            <pre class="code">
+                <code class="language-javascript">   
+    let tabNumber = [10, 1, 2, 3, 4, 5];
+    tabNumber.toString();
+    console.log(tabNumber.toString());
+                </code>
+            </pre>
+        </article>
+        <article id="article-1" class="none">
+            <div class="result-array">
+                6
+            </div>
+            <pre class="code">
+                <code class="language-javascript">   
+    let tabNumber = [10, 1, 2, 3, 4, 5];
+    tabNumber.length;
+    console.log(tabNumber.length);
+                </code>
+            </pre>
+        </article>
+        <article id="article-2" class="none">
+            <div class="result-array">
+                [10, 1, 2, 3, 4]
+            </div>
+            <pre class="code">
+                <code class="language-javascript">   
+let tabNumber = [10, 1, 2, 3, 4, 5];
+tabNumber.pop();
+console.log(tabNumber);
+                </code>
+            </pre>
+        </article>
+        <article id="article-3" class="none">
+            <div class="result-array">
+                [1, 2, 3, 4, 5]
+            </div>
+            <pre class="code">
+                <code class="language-javascript">   
+let tabNumber = [10, 1, 2, 3, 4, 5];
+tabNumber.shift();
+console.log(tabNumber);
+                </code>
+            </pre>
+        </article>
+        <article id="article-4" class="none">
+            <div class="result-array">
+                [2, 3, 4, 5]
+            </div>
+            <pre class="code">
+                <code class="language-javascript">   
+let tabNumber = [10, 1, 2, 3, 4, 5];
+tabNumber.slice(2);
+console.log(tabNumber.slice(2));
+                </code>
+            </pre>
+        </article>
+        <article id="article-5" class="none">
+            <div class="result-array">
+                [10, 1]
+            </div>
+            <pre class="code">
+                <code class="language-javascript">   
+let tabNumber = [10, 1, 2, 3, 4, 5];
+tabNumber.slice(0, 2);
+console.log(tabNumber.slice(0, 2));
+                </code>
+            </pre>
+        </article>
+        <article id="article-6" class="none">
+            <div class="result-array">
+                25<br>
+                0xabcde
+            </div>
+            <pre class="code">
+                <code class="language-javascript">   
+let tabNumber = [10, 1, 2, 3, 4, 5];
+let tabCaracter = ["x", "a", "b", "c", "d", "e"];
+let i = 0;
+let resultNumber = tabNumber.reduce((a, b) => a + b, i);
+let resultCaracter = tabCaracter.reduce((a, b) => a + b, i);
+console.log(resultNumber);
+console.log(resultCaracter);
+                </code>
+            </pre>   
+        </article>
+        <article id="article-7" class="none">
+            <div class="result-array">
+                [1, 2, 3, 4, 5, 10]<br>
+                ['a', 'b', 'c', 'd', 'e', 'x']
+            </div>
+            <pre class="code">
+                <code class="language-javascript">   
+let tabNumber = [10, 1, 2, 3, 4, 5];
+let tabCaracter = ["x", "a", "b", "c", "d", "e"];
+tabNumber.sort((a, b) => a - b);
+tabCaracter.sort();
+console.log(tabNumber);
+console.log(tabCaracter);
+                </code>
+            </pre> 
+        </article>
+        <article id="article-8" class="none">
+            <div class="result-array">
+                [10, 5, 4, 3, 2, 1]<br>
+                ['x', 'e', 'd', 'c', 'b', 'a']
+            </div>
+            <pre class="code">
+                <code class="language-javascript">   
+let tabNumber = [10, 1, 2, 3, 4, 5];
+let tabCaracter = ["x", "a", "b", "c", "d", "e"];
+tabNumber.sort((a, b) => a - b);
+tabNumber.reverse();
+tabCaracter.sort();
+tabCaracter.reverse();
+console.log(tabNumber);
+console.log(tabCaracter);
+                </code>
+            </pre> 
+        </article>
+        <article id="article-9" class="none">
+            <div class="result-array">
+               10
+            </div>
+            <pre class="code">
+                <code class="language-javascript">   
+let tabNumber = [10, 1, 2, 3, 4, 5];
+Math.max(...tabNumber);
+console.log(Math.max(...tabNumber));>
+                </code>
+            </pre> 
+        </article>
+        <article id="article-10" class="none">
+            <div class="result-array">
+                1
+             </div>
+             <pre class="code">
+                 <code class="language-javascript">   
+ let tabNumber = [10, 1, 2, 3, 4, 5];
+ Math.min(...tabNumber);
+ console.log(Math.min(...tabNumber));
+                 </code>
+             </pre> 
+        </article>
+        <article id="article-11" class="none">
+            <div class="result-array">
+                [10, 11, 1, 2, 3, 4, 5]<br>
+                ['x', 'a', 'ok', 'd', 'e']
+             </div>
+             <pre class="code">
+                 <code class="language-javascript">   
+ let tabNumber = [10, 1, 2, 3, 4, 5];
+ let tabCaracter = ["x", "a", "b", "c", "d", "e"];
+ tabNumber.splice(1, 0, 11); //Ajoute 11 à l'index 1
+ tabCaracter.splice(2, 2, "ok"); //Ajoute ok à l'index 2 et supprime les 2 index qui suivent
+ console.log(tabNumber);
+ console.log(tabCaracter);
+                 </code>
+             </pre> 
+        </article>
+        <article id="article-12" class="none">
+            <div class="result-array">
+                [20, 2, 4, 6, 8, 10]
+             </div>
+             <pre class="code">
+                 <code class="language-javascript">   
+ let tabNumber = [10, 1, 2, 3, 4, 5];
+ let resultTabNumber = tabNumber.map((x) => x * 2);
+ console.log(resultTabNumber);
+                 </code>
+             </pre> 
+        </article>
+        <article id="article-13" class="none">
+            <div class="result-array">
+                [10, 4, 5]<br>
+                ['x', 'b', 'c', 'd', 'e']
+             </div>
+             <pre class="code">
+                 <code class="language-javascript">   
+ let tabNumber = [10, 1, 2, 3, 4, 5];
+ let tabCaracter = ["x", "a", "b", "c", "d", "e"];
+ let resultTabNumber = tabNumber.filter((el) => el > 3); //Renvoie tous les éléments au supérieure à 3
+ let resultTabCaracter = tabCaracter.filter((el) => el != "a"); //Retire l'élément a du tableau
+ console.log(resultTabNumber);
+ console.log(resultTabCaracter);
+                 </code>
+             </pre> 
+        </article>
+        <article id="article-14" class="none">
+            <div class="result-array">
+                3<br>
+                a
+             </div>
+             <pre class="code">
+                 <code class="language-javascript">   
+ let tabNumber = [10, 1, 2, 3, 4, 5];
+ let tabCaracter = ["x", "a", "b", "c", "d", "e"];
+ let resultTabNumber = tabNumber.find((el) => el == 3);
+ let resultTabCaracter = tabCaracter.find((el) => el == "a");
+ console.log(resultTabNumber);
+ console.log(resultTabCaracter);
+                 </code>
+             </pre> 
+        </article>
+        <article id="article-15" class="none">
+            <div class="result-array">
+                0<br>
+                1
+             </div>
+             <pre class="code">
+                 <code class="language-javascript">   
+ let tabNumber = [10, 1, 2, 3, 4, 5];
+ let tabCaracter = ["x", "a", "b", "c", "d", "e"];
+ let resultTabNumber = (el) => el > 3; //Renvoie l'index de la valeur la plus grande au dessus de 3
+ let resultTabCaracter = (el) => el == "a"; //Renvoie l'index ou se trouve le caractère a
+ console.log(tabNumber.findIndex(resultTabNumber));
+ console.log(tabCaracter.findIndex(resultTabCaracter));
+                 </code>
+             </pre>        
+        </article>
     </div>
 </body>
 </html>

@@ -1,74 +1,83 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,900&display=swap");
+
 *{
     margin: 0;
     padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: "Roboto", sans-serif;
 }
 
 body{
+    background-color: rgb(28,7,39);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 40px;
 }
 
-.img-fond{
-    background: url(./fond.jpeg) no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    opacity: 0.1;
+h1{
+    color: rgb(122, 0,184);
 }
 
-.code{
-    width: 300px;
-    position: relative;
-    z-index: 2;
-}
-
-.box{
+article{
     display: flex;
     align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.result-array{
     margin: 20px;
+    color: rgb(122, 0,184);
+    font-size: 2em;
 }
 
-p{
-    position: relative;
-    z-index: 2;
-    padding: 10px;
-    border: 1px solid gray;
-    width: 200px; /* à modifier selon vos besoins */
-    font-family: sans-serif;
-    margin-left: 20px;
+nav{
+    margin-top: 40px;
 }
 
-.p1 {
-    overflow: hidden; /* les dépassements seront masqués */
+li{
+    margin: 10px 3px 5px 0px;
 }
 
-.p2{
-    word-wrap: break-word;
+
+ul{
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.p3{
-    overflow: hidden;
-    text-overflow: ellipsis; 
+a{
+    font-family: "Roboto", sans-serif;
+    color: rgb(157, 83, 200);
+    border: 1px solid rgb(157, 83, 200);
+    padding: 5px;
+    cursor: pointer;
 }
 
-.p4{
-    -webkit-hyphens: auto;
-    -moz-hyphens: auto;
-    -ms-hyphens: auto;
-    hyphens: auto;
-    word-wrap: break-word;
+.active{
+    background-color: rgb(17, 0, 26);
+    border: 1px solid rgb(122, 0,184);
+    color: rgb(122, 0,184);
 }
 
-.p5{
-    max-width: 200px;
+a:hover{
+    background-color: rgb(17, 0, 26);
+    border: 1px solid rgb(122, 0,184);
+    color: rgb(122, 0,184);
 }
 
-.chat{
-    width: 375px;
+.menu-active{
+    background-color: rgb(122, 0,184);
+    border: 1px solid rgb(17, 0, 26);
+    color: rgb(17, 0, 26);
 }
 
-.img{
-    max-width: 100%;
+.none{
+    display: none;
+}
+
+.box-article{
+    display: flex;
+    flex-wrap: wrap;
 }
